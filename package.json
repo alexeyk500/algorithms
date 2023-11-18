@@ -1,0 +1,11 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "some algoritms",
+  "main": "index.ts",
+  "scripts": {
+    "run": "npx tsx index.ts"
+  },
+  "author": "alexeyk500",
+  "license": "ISC"
+}
