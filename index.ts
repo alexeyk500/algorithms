@@ -1,7 +1,5 @@
-import {selectionSortAsc} from "./src/selectionSort/selectionSortAsc";
-import {selectionSortDesc} from "./src/selectionSort/selectionSortDesc";
-
-
+import { selectionSortAsc } from './src/selectionSort/selectionSortAsc';
+import { selectionSortDesc } from './src/selectionSort/selectionSortDesc';
 
 // // 1. BinarySearch
 // const sortedArr = [1, 2, 7, 12, 15, 16, 27, 38, 49, 60];
@@ -16,4 +14,3 @@ console.log('Asc', sortedArrAsc);
 
 const sortedArrDesc = selectionSortDesc(arr);
 console.log('Desc', sortedArrDesc);
-
