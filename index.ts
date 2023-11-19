@@ -1,5 +1,4 @@
-import {getArrayMax} from "./src/recursion/getArrayMax";
-import {getArrayMin} from "./src/recursion/getArrayMin";
+import { binarySearchRecursive } from './src/recursion/binarySearchRecursive';
 
 // // 1. BinarySearch
 // const sortedArr = [1, 2, 7, 12, 15, 16, 27, 38, 49, 60];
@@ -28,9 +27,13 @@ import {getArrayMin} from "./src/recursion/getArrayMin";
 // console.log('arr', arr);
 // console.log('getLengthArr', length);
 
-const arr = [12, -7, 2, 38, 60, 15, 49, 16, 27, 6];
-const max = getArrayMax(arr);
-console.log('max', max);
+// const arr = [12, -7, 2, 38, 60, 15, 49, 16, 27, 6];
+// const max = getArrayMax(arr);
+// console.log('max', max);
+//
+// const min = getArrayMin(arr);
+// console.log('min', min);
 
-const min = getArrayMin(arr);
-console.log('min', min);
+const sortedArr = [1, 2, 7, 12, 15, 16, 27, 38, 49, 60];
+const position = binarySearchRecursive(sortedArr, 15);
+console.log('position', position);
