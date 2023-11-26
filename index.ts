@@ -1,4 +1,4 @@
-import { quickSort } from './src/quickSort/quickSort';
+import {breadthFirstSearch, IGraph} from "./src/breadthFirstSearch/breadthFirstSearch";
 
 // // 1. BinarySearch
 // const sortedArr = [1, 2, 7, 12, 15, 16, 27, 38, 49, 60];
@@ -38,8 +38,22 @@ import { quickSort } from './src/quickSort/quickSort';
 // const position = binarySearchRecursive(sortedArr, 15);
 // console.log('position', position);
 
-// 4. quickSort
+// // 4. quickSort
+// const arr = [2, 1, 3, 0, 5, 9, 7, 6, 8, 4];
+// const sortedArr = quickSort(arr);
+// console.log('sortedArr', sortedArr);
 
-const arr = [2, 1, 3, 0, 5, 9, 7, 6, 8, 4];
-const sortedArr = quickSort(arr);
-console.log('sortedArr', sortedArr);
+// 5. breadthFirstSearch
+const graph: IGraph = {};
+graph['me'] = ['alice', 'bob', 'claire'];
+graph['alice'] = ['peggi'];
+graph['bob'] = ['peggi', 'anuj'];
+graph['claire'] = ['tom', 'jonny'];
+graph['peggi'] = [];
+graph['anuj'] = ['киса'];
+graph['tom'] = [];
+graph['jonny'] = []
+graph['киса'] = [];
+
+const result  = breadthFirstSearch(graph, 'me', (item)=>{return item === 'peggi'});
+console.log('result', result)
